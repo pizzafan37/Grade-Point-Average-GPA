@@ -14,6 +14,7 @@ $(".calculate").click(function() {
         sum += grades[i];
         var average = sum / grades.length;
     }
+    average= Math.floor(average);
 
         if (average <= 100 && average >= 97) {
             $(".letter").text("A+");
